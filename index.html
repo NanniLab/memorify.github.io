@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Memorify — Design System</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700&display=swap" rel="stylesheet">
   <style>
     html, body {
       background: #f9f9f9 !important;
@@ -25,6 +25,7 @@
       --shadow-md: 0 4px 6px rgba(62, 37, 68, 0.1);
       --shadow-lg: 0 10px 15px rgba(62, 37, 68, 0.15);
       --shadow-xl: 0 20px 25px rgba(62, 37, 68, 0.2);
+      --color-blush: #F5E0DB;
     }
 
     /* SPACING SCALE */
@@ -106,7 +107,8 @@
     .t-h3  { font-family:'Montserrat',sans-serif; font-size:18px; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; color:#3e2544; }
     .t-body{ font-family:'Roboto',sans-serif; font-size:15px; font-weight:400; line-height:1.6; color:#374151; max-width:480px; }
     .t-cap { font-family:'Roboto',sans-serif; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:#9ca3af; font-weight:500; }
-    .t-num { font-family:'Montserrat',sans-serif; font-size:48px; font-weight:700; color:#e4c25e; letter-spacing:-0.02em; line-height:1; }
+    .t-num   { font-family:'Montserrat',sans-serif; font-size:48px; font-weight:700; color:#e4c25e; letter-spacing:-0.02em; line-height:1; }
+    .t-quote { font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:300; font-style:italic; line-height:1.5; color:#3e2544; }
 
     /* Buttons */
     .btn {
@@ -570,6 +572,13 @@
         <div class="color-swatch-code">#9CA3AF</div>
       </div>
     </div>
+    <div class="color-swatch">
+      <div class="color-swatch-color" style="background-color:#F5E0DB;color:#3e2544;">Blush</div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Blush</div>
+        <div class="color-swatch-code">#F5E0DB</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -626,12 +635,20 @@
       <div class="t-cap">Atualizado há 2 minutos</div>
     </div>
 
-    <div class="type-row" style="display:flex;align-items:baseline;gap:36px;padding:32px 0;">
+    <div class="type-row" style="display:flex;align-items:baseline;gap:36px;padding:32px 0;border-bottom:1px solid #e5e7eb;">
       <div class="tmeta" style="width:160px;flex-shrink:0;">
         <div style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#3e2544;font-family:'Montserrat',sans-serif;">Numeric</div>
         <div style="font-size:12px;color:#9ca3af;margin-top:8px;line-height:1.6;font-family:'Roboto',sans-serif;">Montserrat 700<br>48px · letter-spacing -0.02em</div>
       </div>
       <div class="t-num">2.847</div>
+    </div>
+
+    <div class="type-row" style="display:flex;align-items:baseline;gap:36px;padding:32px 0;">
+      <div class="tmeta" style="width:160px;flex-shrink:0;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#3e2544;font-family:'Montserrat',sans-serif;">Quote</div>
+        <div style="font-size:12px;color:#9ca3af;margin-top:8px;line-height:1.6;font-family:'Roboto',sans-serif;">Cormorant Garamond 300i<br>28px · line-height 1.5</div>
+      </div>
+      <div class="t-quote">"Capture os momentos mais especiais e preserve cada memória com elegância."</div>
     </div>
   </div>
 </section>
